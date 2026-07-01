@@ -77,6 +77,25 @@ API_SECRET=your_testnet_api_secret_here
 
 3. Never commit `.env` to version control.
 
+```mermaid
+flowchart TD
+    A[CLI - argparse] --> B[Input Validation]
+    B --> C{Order Type}
+
+    C -->|MARKET| D[Market Order Handler]
+    C -->|LIMIT| E[Limit Order Handler]
+
+    D --> F[Binance Client]
+    E --> F
+
+    F --> G[Binance Futures Testnet API]
+
+    D --> H[Logger]
+    E --> H
+
+    H --> I[logs/trading_bot.log]
+```
+
 ## Usage
 
 Run the bot from the project root:
