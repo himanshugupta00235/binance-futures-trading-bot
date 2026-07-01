@@ -21,6 +21,24 @@ trading_bot/
 ├── requirements.txt
 └── README.md
 ```
+## Screenshots
+
+### Market Order
+
+![Market Order](screenshots/market-order.png)
+
+---
+
+### Limit Order
+
+![Limit Order](screenshots/limit-order.png)
+
+---
+
+### Validation Error
+
+![Validation Error](screenshots/validation-error.png)
+
 
 ## Installation
 
