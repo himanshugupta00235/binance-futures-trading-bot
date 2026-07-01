@@ -104,7 +104,13 @@ def print_order_response(response: dict[str, Any]) -> None:
     print("-" * 60)
 
     print(f"Order ID       : {response.get('orderId', 'N/A')}")
-    print(f"Status         : {response.get('status', 'N/A')}")
+    status = response.get("status", "N/A")
+
+    if status == "NEW":
+        print(f"Status         : {status} (Accepted by Binance)")
+    else:
+        print(f"Status         : {status}")
+
     print(f"Executed Qty   : {response.get('executedQty', 'N/A')}")
 
     avg_price = response.get("avgPrice")
