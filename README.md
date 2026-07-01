@@ -137,6 +137,18 @@ API keys and secrets are redacted from log output.
 - **Network access required.** The bot needs an internet connection to reach the Binance Testnet API.
 - **Valid symbol.** The symbol must exist and be tradable on the Futures Testnet (e.g. `BTCUSDT`).
 
+## Bonus Feature
+
+Implemented **Enhanced CLI UX**.
+
+### Improvements
+
+- Added colored terminal output using `colorama`.
+- Displayed a clean and professional order summary.
+- Improved success and error messages for better readability.
+- Enhanced order response formatting.
+- Console output is now clean, while detailed API requests, responses, and errors are logged to `logs/trading_bot.log`.
+
 ## Error Handling
 
 The bot handles the following without crashing:
